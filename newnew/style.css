@@ -27,12 +27,12 @@
 } 
 
 li {
+    display: block;
     float: right;
     position: relative;
 }
 
 li a {
-    display: block;
     padding: 8px;
     background-color: #dddddd;
 }

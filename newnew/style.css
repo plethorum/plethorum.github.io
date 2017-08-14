@@ -8,7 +8,7 @@
 .divider {
   display:block;
   position:absolute;
-  top:3px;
+  top:-12px;
   right: 115px;
 }
 

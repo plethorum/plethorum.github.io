@@ -12,6 +12,14 @@
   right: 115px;
 }
 
+.divider2 {
+
+  display: block;
+  position: absolute;
+  top: -12px;
+  right: 44px;
+}
+
 
 .hibiscus {
 	width: 50px;

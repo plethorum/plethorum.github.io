@@ -5,11 +5,12 @@
   left: -100%;
 }
 
-.divider {
+/* .divider {
+  display: block;
 	position: absolute;
-	right: -1px;
-	top: 2px;
+	top: 9px;
 }
+*/
 
 .hibiscus {
 	width: 50px;
@@ -19,10 +20,14 @@
 }
 
 .navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.divider {
+  margin-top: -20px;
 }
 
 li {

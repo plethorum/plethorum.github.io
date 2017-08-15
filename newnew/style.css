@@ -3,7 +3,7 @@
 }
 
 #hibiscus {
-  width: 50px !important;
+  width: 100px !important;
   margin-top: -25px;
   margin-left: -7px;
   filter: url(#monochrome);
@@ -48,4 +48,5 @@ li {
 li a {
   padding: 8px;
   text-decoration: none;
+  color: black;
 }

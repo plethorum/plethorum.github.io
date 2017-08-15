@@ -20,7 +20,7 @@
 .divider {
   display:block;
   position:absolute;
-  top:-12px;
+  top:-10px;
   right: 115px;
 }
 
@@ -28,7 +28,7 @@
 
   display: block;
   position: absolute;
-  top: -12px;
+  top: -10px;
   right: 44px;
 }
 

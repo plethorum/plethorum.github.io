@@ -41,6 +41,11 @@
   font-style: italic;
 } 
 
+h1 {
+  font-style: normal;
+  letter-spacing: 5px;
+}
+
 li {
   display: block;
   float: right;

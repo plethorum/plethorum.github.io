@@ -41,6 +41,12 @@
   font-style: italic;
 } 
 
+.page1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   font-weight: lighter;
   letter-spacing: 5px;

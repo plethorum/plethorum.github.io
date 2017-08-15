@@ -45,6 +45,8 @@ li {
   display: block;
   float: right;
   position: relative;
+  top: 4px;
+  padding-bottom: 4px;
 }
 
 li a {

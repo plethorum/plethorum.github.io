@@ -1,5 +1,51 @@
+@font-face {
+    font-family: 'kollektif-bold';
+    src: url('fonts/Kollektif-Bold.woff2') format('woff2'),
+         url('fonts/Kollektif-Bold.woff') format('woff'),
+         url('fonts/Kollektif-Bold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@media (max-width: 1000px) {
+  body {
+    font-family: sans-serif;
+  }
+  p {
+    font-family: monospace;
+  }
+}
+@keyframes name {
+from { text-shadow: none;}
+to {text-shadow: 0.25rem -0.25rem rgba(255, 0, 255, 0.75), -0.25rem -0.25rem rgba(0, 255, 255, 0.75), 0 0.25rem rgba(255, 255, 0, 0.75);}
+}
+
+
 body {
-  background-color: #3333ff;
+  background-color: #343434;
+  color: #fff;
+  font-family: 'kollektif-bold',sans-serif;
   display: grid;
-  grid-template-rows:
+  grid-template-rows: [header-start] 25% [header-end body-start] 500px;
+  grid-template-columns: [spacer-start] 12.5% [content-start] 75% [content-end] 12.5%;
+  grid-template-areas:
+}
+h1 {
+  font-size: 14vw;
+}
+h1:hover {
+    animation-name: name;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;;
+}
+
+p {
+  font-family: Inconsolata;
+  font-size: 100%;
+}
+
+p.headliner {
+  color: #dfdfdf;
 }

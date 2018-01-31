@@ -15,37 +15,83 @@
     font-family: monospace;
   }
 }
-@keyframes name {
+
+@keyframes name-glow {
 from { text-shadow: none;}
 to {text-shadow: 0.25rem -0.25rem rgba(255, 0, 255, 0.75), -0.25rem -0.25rem rgba(0, 255, 255, 0.75), 0 0.25rem rgba(255, 255, 0, 0.75);}
 }
 
 
 body {
-  background-color: #343434;
+  background-color: #0000ff;
   color: #fff;
   font-family: 'kollektif-bold',sans-serif;
   display: grid;
-  grid-template-rows: [header-start] 25% [header-end body-start] 500px;
-  grid-template-columns: [spacer-start] 12.5% [content-start] 75% [content-end] 12.5%;
-  grid-template-areas:
+  grid-template-rows: [spacer-top] 25px [header-start] 1fr [header-end body-start] 15vw;
+  grid-template-columns: [spacer] 1.736vw [content-start] 1fr [content-end] 1.736vw;
 }
 h1 {
-  font-size: 14vw;
+  font-size: 4.5rem;
+  grid-column-start: content-start;
+  grid-row-start: header-start;
+  margin: 0;
+  text-align: center;
+
 }
-h1:hover {
-    animation-name: name;
+span.name {
+    animation-name: name-glow;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;;
 }
 
-p {
+div.content {
+  grid-row-start: body-start;
+  grid-column-start: content-start;
+  display: grid;
+  grid-template-columns: [spacer] 1.736vw [content-start left] 2fr [right] 1fr [content-end] 1.736vw;
+  grid-template-rows:[headliner-start] 100px [copy-start]0.25fr [facts-start] 1fr [facts-end] 1fr;
+}
+p, li {
   font-family: Inconsolata;
-  font-size: 100%;
+  font-size: 1.125rem;
+  color: #dfdfdf;
 }
 
-p.headliner {
-  color: #dfdfdf;
+.headliner {
+  text-align: center;
+  font-size: 0.9rem;
+  grid-column: content-start/content-end;
+  grid-row: headliner-start;
+}
+
+.pre-facts, .facts {
+  grid-column: left;
+  grid-row-start: copy-start;
+}
+.facts {
+  grid-row: facts-start;
+  line-height: 30px;
+}
+
+.profile-pic {
+  grid-row: facts-start;
+  grid-column: right;
+  width: 250px;
+  height: 250px;
+}
+@media (max-width: 650px) {
+  .profile-pic {
+    grid-row: facts-end;
+    grid-column: left;
+  }
+}
+.no-color-link {
+  text-decoration-color: #dfdfdf;
+  color: inherit;
+}
+
+li {
+  font-size: 1rem;
 }
